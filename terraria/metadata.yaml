@@ -1,0 +1,8 @@
+name: Terraria
+revision: 1
+summary: "Terraria Game Server"
+description: |
+    Installs the Terraria game server v 1.1.2 provided by relogic
+    powered by TShock mods to run on the linux platform via mono.
+requires:
+  framework: mono
