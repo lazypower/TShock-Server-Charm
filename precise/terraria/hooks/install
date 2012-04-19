@@ -2,7 +2,7 @@
 
 set -eux # Verbose logging to juju debug-log
 juju-log "Installing mono via apt-get"
-apt-get -y install mono-complete
+apt-get -y install mono-complete unzip wget
 
 #make a temporary directory to house the TShock and Terraria server bins
 juju-log "Creating a temporary cache for setup"
