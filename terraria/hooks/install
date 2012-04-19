@@ -1,11 +1,11 @@
 #!/bin/bash
 
 set -eux # Verbose logging to juju debug-log
-#juju-log "Installing mono via apt-get"
+juju-log "Installing mono via apt-get"
 apt-get -y install mono-complete
 
 #make a temporary directory to house the TShock and Terraria server bins
-#juju-log "Creating a temporary cache for setup"
+juju-log "Creating a temporary cache for setup"
 
 #Force removal of the directory if it exists
 rm -rf /tmp/terraria
@@ -15,7 +15,7 @@ mkdir /tmp/terraria
 #create the cache
 cd /tmp/terraria
 
-#juju-log "fetching the 3.8.0 copy of the TShock server" 
+juju-log "fetching the 3.8.0 copy of the TShock server" 
 wget -O tshock.zip https://github.com/downloads/TShock/TShock/TShock%203.8.0.0304.zip
 
 unzip /tmp/terraria/tshock.zip
@@ -24,4 +24,4 @@ unzip /tmp/terraria/tshock.zip
 rm tshock.zip
 
 #move the server bins to its final resting place
-mv /tmp/terraria /opt/terraria
+mv /tmp/terraria/terraria /opt/terraria
