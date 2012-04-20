@@ -1,1 +1,1 @@
-mono /opt/terraria/TerrariaServer.exe
+mono /opt/terraria/TerrariaServer.exe -port 7777 -maxplayers 16 -autocreate 2 -w "/opt/terraria/juju-world.wld"
