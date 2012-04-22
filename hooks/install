@@ -24,4 +24,4 @@ unzip /tmp/terraria/tshock.zip
 rm tshock.zip
 
 #move the server bins to its final resting place
-mv /tmp/terraria/terraria /opt/terraria
+mv /tmp/terraria /opt/terraria
